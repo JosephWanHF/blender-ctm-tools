@@ -1,0 +1,36 @@
+schema_version = "1.0.0"
+id = "openctm_ctm"
+name = "OpenCTM (.ctm)"
+version = "1.4.0"
+author = "RealIndrit"
+tagline = "Import/Export meshes from/to OpenCTM (.ctm)"
+maintainer = "Community"
+type = "add-on"
+tags = ["Import-Export"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+website = "https://github.com/RealIndrit/blender-import-openctm"
+copyright = ["2024 RealIndrit"]
+platforms = ["windows-x64", "macos-arm64"]
+[permissions]
+files = "Requires access to directory with .ctm files"
+[build]
+paths_exclude_pattern = [
+  "/.venv",
+  "__pycache__/",
+  "/cache/",
+  "/.git/",
+  "/.github/",
+  "/.gitignore",
+  "/.mypy_cache/",
+  "/.ruff_cache/",
+  "/venv/",
+  "/*.zip",
+  "/*.blend",
+  "/*.svg",
+  "/*.png",
+  "/*.json",
+  "/assets/",
+  "/test/",
+  "/.idea/"
+]
